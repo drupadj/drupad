@@ -43,3 +43,8 @@ int main()
     return 0; 
 } 
 
+/*
+
+Please note that above is simple example to show how threads work. Accessing a global variable in a thread is generally a bad idea. What if thread 2 has priority over thread 1 and thread 1 needs to change the variable. In practice, if it is required to access global variable by multiple threads, then they should be accessed using a mutex.
+
+*/
