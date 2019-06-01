@@ -1,6 +1,7 @@
 /*
 
 Swap all odd and even bits
+Swap every two bits in bytes
 
 In the above question, you need to swap the even and odd bits. To accomplish the above task you need to first find the even and odd bits then shift these bits. See the below steps,
 
