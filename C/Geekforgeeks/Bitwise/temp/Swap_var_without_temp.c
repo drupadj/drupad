@@ -11,11 +11,12 @@ void SwapTwoNumber(int *a, int *b)
     *a = *a ^ *b;
 }
  
-int main()
-{
-  int x = 10;
-  int y = 20;
+int main() {
+
+   int x = 0, y = 0;
  
+   printf ("Enter 2 numbers :");
+   scanf ("%d %d", &x, &y);
  
   SwapTwoNumber(&x, &y);
   

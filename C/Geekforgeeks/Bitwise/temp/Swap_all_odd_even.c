@@ -19,7 +19,10 @@ Let the input number is data (Assuming integer size is 4 bytes),
  
 int main()
 {
- int data = 2;
+ int data = 0;
+
+ printf ("Enter a number :");
+ scanf ("%d", &data);
  
  data = ((data & 0xAAAAAAAA)>>1 | (data & 0x55555555)<<1);
  
