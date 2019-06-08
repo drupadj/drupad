@@ -1,0 +1,1 @@
+cmd_/root/Downloads/mem_cache/dma_pci_test.ko := ld -r -m elf_i386 -T /usr/src/kernels/2.6.33.3-85.fc13.i686.PAE/scripts/module-common.lds --build-id -o /root/Downloads/mem_cache/dma_pci_test.ko /root/Downloads/mem_cache/dma_pci_test.o /root/Downloads/mem_cache/dma_pci_test.mod.o

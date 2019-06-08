@@ -1,0 +1,4 @@
+kernel//root/Code-2.6.30/kern-prog/modules/mod.ko
+kernel//root/Code-2.6.30/kern-prog/modules/depmod.ko
+kernel//root/Code-2.6.30/kern-prog/modules/mod1.ko
+kernel//root/Code-2.6.30/kern-prog/modules/mod2.ko
