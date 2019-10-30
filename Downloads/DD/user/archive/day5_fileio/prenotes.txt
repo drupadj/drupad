@@ -1,0 +1,12 @@
+File I/O
+=======================
+
+In Linux everything is a file, even directory is a file 
+
+Most file I/O on a UNIX system can be performed with six functions: 
+	open, 
+	read, 
+	write, 
+	lseek, 
+	close,
+	dup, dup2

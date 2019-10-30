@@ -1,0 +1,17 @@
+Does the ftok requires the file to be exist?
+====================================================
+ftok requires that the file to be exists, as it uses the inode information of that file to create the key
+
+Which file should I pass as pathname argument to ftok()?
+=======================================================
+generally you would use a file associated with the application itself.
+
+Best case, use the configuration file of the application, worst case,  if you have no configuration files for your application, try to use the executable itself
+
+You're also not restricted to files, you can use /etc itself or /tmp or even / if you must. But there are chances that they can be collisions as some other user can use the same file as key. It's better to always use your own configuration file for ftok
+
+Can I give a pathname instead of file?
+====================================
+
+From Documentation: The application shall ensure that the path argument is the pathname of an existing file that the process is able to stat().
+
