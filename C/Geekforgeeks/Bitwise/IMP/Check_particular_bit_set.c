@@ -4,7 +4,7 @@
 
 int main () {
 
-int num = 0, res = 0, pos = 0;
+int num = 0, pos = 0;
 
 printf ("Enter a number :");
 scanf ("%d",&num);
@@ -12,9 +12,9 @@ scanf ("%d",&num);
 printf ("Enter a position :");
 scanf ("%d",&pos);
 
-res = num & 1 << pos;
+pos = pos - 1;
 
-res == 0 ? printf ("Bit is Clear\n") : printf ("Bit is set\n");
+num & 1 << pos ? printf ("Bit is Set\n") : printf ("Bit is clear\n");
 
 return 0;
 }

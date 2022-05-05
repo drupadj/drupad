@@ -9,7 +9,7 @@ scanf ("%d", &num);
 
 for ( pos = 31; pos >= 0; pos--) {
 
-if ((!(num & 1 << pos)) && (num & 1 << pos - 1))
+if ((num & 1 << pos) && (!(num & 1 << pos - 1)))
 		count++; 
 } 
 	printf ("Count is = %d\n", count);
