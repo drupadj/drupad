@@ -1,4 +1,5 @@
 // Check if all bits of a number are set
+// Check if all bits are unset
 
 #include <stdio.h> 
 
