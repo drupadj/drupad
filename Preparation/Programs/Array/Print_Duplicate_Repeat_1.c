@@ -3,16 +3,19 @@
  
 void printRepeating(int arr[], int size)
 {
-  int *count = (int *)calloc(sizeof(int), (size - 2));
+  int *count = (int *)calloc(sizeof(int), (size));
   int i;
    
   printf(" Repeating elements are ");
   for(i = 0; i < size; i++)
   { 
     if(count[arr[i]] == 1)
+     // printf(" %d ", arr[i]);
+     continue;
+    else{
       printf(" %d ", arr[i]);
-    else
      count[arr[i]]++;
+    }
   }   
 }    
  
