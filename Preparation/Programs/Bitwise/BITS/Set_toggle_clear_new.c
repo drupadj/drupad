@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-#define SET	1
+#define AND	1
 
 void toggle(int n)
 {
@@ -12,7 +12,7 @@ void toggle(int n)
         n = n ^ temp;
 #elif SET
 	n = n | temp;
-#else
+#elif AND
 	n = n & temp;
 #endif
  

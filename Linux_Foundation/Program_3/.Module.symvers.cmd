@@ -1,0 +1,1 @@
+cmd_/mpm_disk/sdc2/DRUPAD/AMF-1/drupad/Linux_Foundation/Program_3/Module.symvers := sed 's/\.ko$$/\.o/' /mpm_disk/sdc2/DRUPAD/AMF-1/drupad/Linux_Foundation/Program_3/modules.order | scripts/mod/modpost -m -a  -o /mpm_disk/sdc2/DRUPAD/AMF-1/drupad/Linux_Foundation/Program_3/Module.symvers -e -i Module.symvers   -T -

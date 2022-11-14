@@ -579,9 +579,9 @@ char* ReverseString(char *str, int start, int end)
     while (start < end)
     {
         // XOR for swapping the variable
-        str[start] ^= str[end];
-        str[end] ^= str[start];
-        str[start] ^= str[end];
+        str[start] = str[start] ^ str[end];
+        str[end] = str[end] ^ str[start];
+        str[start] = str[start] ^ str[end];
  
         ++start;
         --end;

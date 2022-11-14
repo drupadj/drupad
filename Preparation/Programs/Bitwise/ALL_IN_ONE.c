@@ -240,7 +240,7 @@ int main() {
   
   return 0;
 }
-// Set all even bits of a number
+// Clear all even bits of a number
 
 #include<stdio.h> 
    
@@ -265,7 +265,7 @@ printf ("%d\n", n & res);
     return 0; 
 } 
 
-// Set all even bits of a number
+// CLear all odd bits of a number
 
 #include<stdio.h> 
    

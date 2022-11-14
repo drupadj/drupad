@@ -164,7 +164,6 @@ void ReadArray(int *paData)
 }
  
  
- 
 int main(int argc, char *argv[]) 
 {
  //Create an array
@@ -187,7 +186,8 @@ int countOnes(bool arr[], int n)
 {
     int ans;
     int low = 0, high = n - 1;
-    while (low <= high) { // get the middle index
+    while (low <= high) 
+    { // get the middle index
         int mid = (low + high) / 2;
  
         // else recur for left side

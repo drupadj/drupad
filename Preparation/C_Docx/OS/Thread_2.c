@@ -27,7 +27,7 @@ void *myThreadFun(void *vargp)
     ++s; ++g; 
   
     // Print the argument, static and global variables 
-    printf("Thread ID: %d, Static: %d, Global: %d\n", *myid, ++s, ++g); 
+    printf("Thread ID: %X, Static: %d, Global: %d\n", *myid, ++s, ++g); 
 } 
   
 int main() 

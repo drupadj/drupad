@@ -36,7 +36,7 @@ int oddbittogglenumber(int n)
    
 int main() 
 { 
-    int n = 9; 
+    int n = 10; 
     printf ("%d\n",oddbittogglenumber(n));
     return 0; 
 } 
