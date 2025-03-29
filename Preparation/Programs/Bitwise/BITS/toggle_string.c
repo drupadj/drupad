@@ -7,7 +7,7 @@
 
 char *toggleCase(char *a) 
 { 
-    for ( int i=0; a[i]!='\0'; i++) { 
+    for ( int i=0; a[i]; i++) { 
   
         // Bitwise EXOR with 32 
         a[i] ^= 32; 

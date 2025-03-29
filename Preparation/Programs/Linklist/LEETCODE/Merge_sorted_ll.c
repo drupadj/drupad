@@ -7,6 +7,14 @@
  *     struct ListNode *next;
  * };
  */
+
+/*
+
+Input: list1 = [1,2,4], list2 = [1,3,4]
+Output: [1,1,2,3,4,4]
+
+*/
+
 struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2)
 {
     typedef struct ListNode ST;

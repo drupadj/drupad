@@ -25,6 +25,13 @@ As we go through the linked list, we want our first node to be the last therefor
  * };
  */
 
+/*
+
+Input: head = [1,2,2,1]
+Output: true
+
+*/
+
 typedef struct ListNode ST;
 
 struct ListNode* reverseList(struct ListNode* head)

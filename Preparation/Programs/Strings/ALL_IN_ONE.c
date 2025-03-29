@@ -391,13 +391,16 @@ void reverseWords(char* s)
  
     char* temp = s;
  
-    while (*temp) {
+    while (*temp) 
+    {
         temp++;
 
-        if (*temp == '\0') {
+        if (*temp == '\0') 
+	{
             reverse(word_begin, temp - 1);
         }
-        else if (*temp == ' ') {
+        else if (*temp == ' ') 
+	{
             reverse(word_begin, temp - 1);
             word_begin = temp + 1;
         }
@@ -417,7 +420,8 @@ int main()
 void reverse(char* begin, char* end)
 {
     char temp;
-    while (begin < end) {
+    while (begin < end) 
+    {
         temp = *begin;
         *begin++ = *end;
         *end-- = temp;
@@ -430,13 +434,16 @@ void reverseWords(char* s)
  
     char* temp = s;
  
-    while (*temp) {
+    while (*temp) 
+    {
         temp++;
 
-        if (*temp == '\0') {
+        if (*temp == '\0') 
+	{
             reverse(word_begin, temp - 1);
         }
-        else if (*temp == ' ') {
+        else if (*temp == ' ') 
+	{
             reverse(word_begin, temp - 1);
             word_begin = temp + 1;
         }

@@ -7,6 +7,13 @@
  *     struct ListNode *next;
  * };
  */
+
+/*
+
+Input: head = [1,0,1]
+Output: 5
+
+*/
 int getDecimalValue(struct ListNode* head)
 {
     int res = 0;

@@ -4,7 +4,7 @@
  
 int main()
 {
-    unsigned int n = 4;
+    unsigned int n = 10;
 
     unsigned int num = n ^ (n >> 1);
 

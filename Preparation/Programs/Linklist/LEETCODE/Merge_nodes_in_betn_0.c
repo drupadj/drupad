@@ -5,6 +5,14 @@
  *     struct ListNode *next;
  * };
  */
+
+/*
+
+Input: head = [0,3,1,0,4,5,2,0]
+Output: [4,11]
+
+*/
+
 struct ListNode* mergeNodes(struct ListNode* head)
 {
     typedef struct ListNode ST;

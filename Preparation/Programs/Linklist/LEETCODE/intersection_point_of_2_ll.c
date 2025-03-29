@@ -7,6 +7,13 @@
  *     struct ListNode *next;
  * };
  */
+
+/*
+
+Input: intersectVal = 2, listA = [1,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1
+Output: Intersected at '2'
+
+*/
 struct ListNode *getIntersectionNode(struct ListNode *headA, struct ListNode *headB) 
 {
     int c1 = 0;

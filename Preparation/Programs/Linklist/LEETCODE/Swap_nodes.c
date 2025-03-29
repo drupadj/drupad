@@ -16,6 +16,14 @@
  *     struct ListNode *next;
  * };
  */
+
+/*
+
+Input: head = [1,2,3,4,5], k = 2
+Output: [1,4,3,2,5]
+
+*/
+
 struct ListNode* swapNodes(struct ListNode* head, int k)
 {
     typedef struct ListNode ST;

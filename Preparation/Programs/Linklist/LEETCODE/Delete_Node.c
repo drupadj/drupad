@@ -4,6 +4,9 @@ Given only a pointer to a node to be deleted in a singly linked list, how do you
 
 The fast solution is to copy the data from the next node to the node to be deleted and delete the next node
 
+Input: head = [4,5,1,9], node = 5
+Output: [4,1,9]
+
 */
 
 /**

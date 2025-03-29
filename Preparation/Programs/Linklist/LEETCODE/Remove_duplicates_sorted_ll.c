@@ -7,6 +7,13 @@
  *     struct ListNode *next;
  * };
  */
+
+/*
+
+Input: head = [1,1,2]
+Output: [1,2]
+
+*/
 struct ListNode* deleteDuplicates(struct ListNode* head)
 {
     typedef struct ListNode ST;

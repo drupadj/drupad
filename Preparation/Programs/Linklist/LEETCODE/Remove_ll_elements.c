@@ -5,6 +5,14 @@
  *     struct ListNode *next;
  * };
  */
+
+/*
+
+Input: head = [1,2,6,3,4,5,6], val = 6
+Output: [1,2,3,4,5]
+
+*/
+
 struct ListNode* removeElements(struct ListNode* head, int val)
 {
     typedef struct ListNode ST;

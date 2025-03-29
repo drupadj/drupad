@@ -1,4 +1,4 @@
-// Set all even bits of a number
+// Clear all odd bits of a number
 
 #include<stdio.h> 
    

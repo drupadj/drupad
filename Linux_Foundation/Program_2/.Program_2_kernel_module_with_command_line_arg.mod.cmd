@@ -1,1 +1,0 @@
-cmd_/mpm_disk/sdc2/DRUPAD/AMF-1/drupad/Linux_Foundation/Program_2/Program_2_kernel_module_with_command_line_arg.mod := { echo  /mpm_disk/sdc2/DRUPAD/AMF-1/drupad/Linux_Foundation/Program_2/Program_2_kernel_module_with_command_line_arg.o;  echo; } > /mpm_disk/sdc2/DRUPAD/AMF-1/drupad/Linux_Foundation/Program_2/Program_2_kernel_module_with_command_line_arg.mod
