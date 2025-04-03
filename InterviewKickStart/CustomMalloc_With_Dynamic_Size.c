@@ -1,3 +1,7 @@
+/* malloc() - implicit linked list-based implementation 
+   Implementing a mechanism to return a chunk of memory aligned to a particular data type size
+*/
+
 #include <stdio.h>
 #include <stdint.h>
 #include <stddef.h>
@@ -28,22 +32,33 @@ void mem_init()
     free_list->next = NULL;
 }
 
-/* Allocate memory */
 void* mem_alloc(size_t size)
 {
-    size = ALIGN(size);  /* Align requested size */
+    uintptr_t block_start;
+    uintptr_t user_ptr;
+    size_t padding;
+    size_t total_needed;
+    size_t remaining;
+
+    size = ALIGN(size);  // Align requested size
     BlockHeader* curr = free_list;
 
     while (curr)
     {
-        if (curr->free && curr->size >= size + sizeof(BlockHeader))
-	{
-            size_t total_needed = size + sizeof(BlockHeader);
-            size_t remaining = curr->size - total_needed;
+        block_start = (uintptr_t)curr;
 
-            /* Split if enough space left */
+        user_ptr = block_start + sizeof(BlockHeader);
+        user_ptr = ALIGN(user_ptr);  // Align user data
+
+        padding = user_ptr - (block_start + sizeof(BlockHeader));
+        total_needed = (user_ptr - block_start) + size;
+
+        if (curr->free && curr->size >= total_needed)
+        {
+            remaining = curr->size - total_needed;
+
             if (remaining > sizeof(BlockHeader))
-	    {
+            {
                 BlockHeader* new_block = (BlockHeader*)((uint8_t*)curr + total_needed);
                 new_block->size = remaining;
                 new_block->free = 1;
@@ -54,13 +69,13 @@ void* mem_alloc(size_t size)
             }
 
             curr->free = 0;
-            return (uint8_t*)curr + sizeof(BlockHeader);  /* Return pointer after header */
+            return (void*)user_ptr;
         }
 
         curr = curr->next;
     }
 
-    return NULL;  /* Out of memory */
+    return NULL;
 }
 
 /* Free memory */
